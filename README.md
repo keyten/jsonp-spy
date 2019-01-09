@@ -31,4 +31,4 @@ spyJSONP('http://localhost/script?type=abc', 'callbackFunctionName', 12345, ['x'
  - **ignoreParams** - get parameters which value will be ignored (example: you want to intercept everything like `script?param1=someValue&x=%x&y=%y` where `x` and `y` may have any values; so, `url='script?param1=someValue'` and `ignoreParams=['x', 'y']`).
 
 ### spyJSONP.reset()
-Removes all callbacks and returns `document.createElement` back.
+Removes all callbacks and gets `document.createElement` back unchanged.
